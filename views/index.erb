@@ -2,21 +2,13 @@
   <head>
     <style>
       body {
-        background:
-        <%=
-          set_color(message)
-        %>;
+        background: <%= set_color(message) %>;
       }
     </style>
   </head>
   <body>
     <p>
-    <%=
-      if cheat=="true"
-        "The secret number is #{number}"
-      end
-      "The secret number is #{number}"
-    %>
+    <%= cheat %>
     </p>
 
     <form>
